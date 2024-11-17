@@ -1,0 +1,45 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+  color: white;
+}
+
+#select-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-left: 35px;
+  padding-right: 35px;
+  transition: .18s all;
+  box-shadow: 7px 6px 28px 1px black;
+}
+
+#select-button:hover {
+  opacity: 0.8;
+}
+
+#select-button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px black;
+  opacity: .6;
+
+}
+
+body {
+  background-color: darkgray;
+}
+
+h1 {
+  display: block;
+  padding-bottom: 12px;
+}
