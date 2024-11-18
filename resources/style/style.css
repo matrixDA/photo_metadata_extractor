@@ -3,14 +3,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 85vh;
+  min-height: 85vh;
   color: white;
+  margin: 50px 50px;
+
 }
 
 #select-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: none;
   outline: none;
   background-color: white;
@@ -36,10 +35,10 @@
 }
 
 body {
-  background-color: darkgray;
+  background-color: #121212;;
 }
 
 h1 {
-  display: block;
   padding-bottom: 12px;
+  text-align: center;
 }
