@@ -1,4 +1,4 @@
-//const ExifReader = require('exifreader');
+const ExifReader = require('exifreader');
 
 const selectButton = document.getElementById('select-button');
 
