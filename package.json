@@ -2,9 +2,10 @@
   "name": "exif_data",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "lint": "eslint",
-    "start": "nodemon server.js"
+    "start": "npx webpack; nodemon server.js"
   },
   "keywords": [],
   "author": "",

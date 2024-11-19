@@ -1,0 +1,1 @@
+(()=>{let e;document.getElementById("select-button").addEventListener("click",(t=>{t.preventDefault();let l=document.createElement("input");l.type="file",l.onchange=()=>{e=Array.from(l.files),console.log(e)},l.click()}))})();
