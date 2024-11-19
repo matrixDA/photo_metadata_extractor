@@ -31,7 +31,8 @@ export default [
         0
       ],
       "no-unused-vars": `off`,
-      "no-constant-condition": `off`
+      "no-constant-condition": `off`,
+      "ignores": ["*/dist"]
     }
   }
 ];

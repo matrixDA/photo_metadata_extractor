@@ -1,1 +1,1 @@
-(()=>{"use strict";const e=document.getElementById(`select-button`);let t=null;e.addEventListener(`click`,(e=>{e.preventDefault();let n=document.createElement(`input`);n.type=`file`,n.onchange=()=>{t=Array.from(n.files);},n.click();}));})();
+(()=>{"use strict";const e=document.getElementById("select-button");let t=null;e.addEventListener("click",(e=>{e.preventDefault();let n=document.createElement("input");n.type="file",n.onchange=()=>{t=Array.from(n.files)},n.click()}))})();
