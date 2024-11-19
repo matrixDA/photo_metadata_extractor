@@ -7,6 +7,11 @@ export default [
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   {
+    ignores: [
+      `**/dist/*`
+    ]
+  },
+  {
     "rules": {
       "semi": [
         2,
@@ -32,7 +37,6 @@ export default [
       ],
       "no-unused-vars": `off`,
       "no-constant-condition": `off`,
-      "ignores": ["*/dist"]
     }
   }
 ];

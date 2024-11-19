@@ -1,5 +1,3 @@
-
-
 const selectButton = document.getElementById(`select-button`);
 
 let chosenFile = null;
@@ -11,6 +9,7 @@ selectButton.addEventListener(`click`, (e) => {
   input.type = `file`;
   input.onchange = () => {
     chosenFile = Array.from(input.files);
+    console.log(`File Selected`);
   };
   input.click();
 });
