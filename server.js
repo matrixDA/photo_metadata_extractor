@@ -1,10 +1,13 @@
 import express from "express";
+
+const PORT = 3000;
 const app = express();
 
-app.use(express.static('./dist'));
+app.use(express.static(`./public`));
 
-app.get('/', (req, res) => {
-  res.sendFile("index.html");
-});
+app.use(express.static(`./src`));
 
-app.listen(3000);
+app.listen(
+  PORT,
+  () => console.log(`Access via http://localhost:${PORT}`)
+);

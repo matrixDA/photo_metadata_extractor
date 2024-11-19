@@ -1,17 +1,16 @@
 
 
-const selectButton = document.getElementById('select-button');
+const selectButton = document.getElementById(`select-button`);
 
-let chosenFile;
+let chosenFile = null;
 
-selectButton.addEventListener('click', (e) => {
+selectButton.addEventListener(`click`, (e) => {
   e.preventDefault();
 
-  let input = document.createElement('input');
-  input.type = 'file';
+  let input = document.createElement(`input`);
+  input.type = `file`;
   input.onchange = () => {
     chosenFile = Array.from(input.files);
-    console.log(chosenFile);
   };
   input.click();
 });
