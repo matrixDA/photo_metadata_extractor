@@ -1,18 +1,22 @@
-const selectButton = document.getElementById(`select-button`);
+import ExifReader from 'exifreader';
 
-let chosenFile = null;
+document.querySelector(`form`).addEventListener(`submit`, handleSubmit);
 
-selectButton.addEventListener(`click`, (e) => {
+async function handleSubmit(e) {
   e.preventDefault();
 
-  let input = document.createElement(`input`);
-  input.type = `file`;
-  input.onchange = () => {
-    chosenFile = Array.from(input.files);
-    console.log(`File Selected`);
-  };
-  input.click();
-});
+  const file = e.target.elements.file.files[0]; 
+
+  try {
+    const tags = await ExifReader.load(file);
+    console.log(tags);
+
+
+  } catch (e) {
+    console.log(e);
+  }
+}
+
 
 
 
