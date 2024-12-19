@@ -1,1 +1,5 @@
+# Exclude Everything
 images/*
+
+# Except these
+!images/test
