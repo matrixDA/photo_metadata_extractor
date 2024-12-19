@@ -9,10 +9,10 @@
 <body>
   <div class="container">
     <h1>Photo Metadata Reader</h1>
-    <form method="post" action="/public/images" enctype="multipart/form-data" >
+    <form method="post" action="/api/post/image" enctype="multipart/form-data" >
       <label>
         Select an image file to begin reading metadata:<br />
-        <input type="file" id="file" name="file">
+        <input type="file" name="image" />
       </label>
       <input type="submit" value="Load file">
     </form>
