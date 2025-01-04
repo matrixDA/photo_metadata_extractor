@@ -10,7 +10,7 @@ app.use(express.static(path.resolve(import.meta.dirname, `public`)));
 app.use(express.static(path.resolve(import.meta.dirname, `src`)));
 app.use(express.static(path.resolve(import.meta.dirname, `dist`)));
 
-const storage = multer.diskStorage({
+/* const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, path.resolve(import.meta.dirname, `images`));
   },
@@ -19,12 +19,13 @@ const storage = multer.diskStorage({
   },
 });
 const upload = multer({ storage : storage });
-
+*/
 /*
 app.get(`/` ,(req, res, ) => {
   return res.send(`index.html`);
 });*/
 
+/*
 function removeFileSync(directory) {
   const files = fs.readdirSync(directory);
   for (const file of files) {
@@ -37,6 +38,7 @@ app.post(`/api/post/image`, upload.single(`image`), (req, res, next) => {
   console.log(`\nfile received`);
   console.log(req.file, req.body);
 });
+*/
 
 app.listen(PORT, () => 
 {
