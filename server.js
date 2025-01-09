@@ -10,8 +10,15 @@ app.use(express.static(path.resolve(import.meta.dirname, `public`)));
 app.use(express.static(path.resolve(import.meta.dirname, `src`)));
 app.use(express.static(path.resolve(import.meta.dirname, `dist`)));
 
-const upload = multer({dest: path.resolve(import.meta.dirname, `./images`)});
-
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, path.resolve(import.meta.dirname, `images`));
+  },
+  filename: (req, file, cb) => {
+    cb(null, file.originalname);
+  },
+});
+const upload = multer({ storage : storage });
 /*
 app.get(`/` ,(req, res, ) => {
   return res.send(`index.html`);
