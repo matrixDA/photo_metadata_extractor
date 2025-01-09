@@ -24,8 +24,8 @@ app.get(`/` ,(req, res, ) => {
   return res.send(`index.html`);
 });*/
 
-app.post(`/api/post/image`, upload.single(`image`), (req, res) => {
-  res.send(`file received`);
+app.post(`/api/post/image`, upload.single(`image`), (req, res, next) => {
+  console.log(`\nfile received`);
   console.log(req.file, req.body);
 });
 
